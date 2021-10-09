@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GocartSetupTracker.Views.setupsListPage"
+             Title="Bane setups">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+
+            <ListView ItemSelected="setUpSelected" SeparatorColor="#c1c1c1" RowHeight="70" Grid.Row="0" x:Name="setupsListView">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid Padding="5,10,5,10">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="1*"/>
+                                    <RowDefinition Height="1*"/>
+                                </Grid.RowDefinitions>
+                                <Label Grid.Row="0" FontSize="15" FontAttributes="Bold" Text="{Binding SetupName}"></Label>
+                                <Label Grid.Row="1" Text="{Binding TrackName}"></Label>
+                            </Grid>
+                        </ViewCell>
+                        <!--<TextCell Text="{Binding CartBrand}" Detail="{Binding CartBrand}"/>-->
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <AbsoluteLayout Padding="20" HorizontalOptions="End" VerticalOptions="End" Grid.Row="0">
+                <ImageButton BackgroundColor="Transparent" Clicked="CreateNewCartSetup" WidthRequest="75" Source="icon_add.png"></ImageButton>
+            </AbsoluteLayout>
+            
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

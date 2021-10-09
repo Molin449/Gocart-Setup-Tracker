@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GocartSetupTracker.Views.SetupItemDetailPage"
+             xmlns:model="clr-namespace:GocartSetupTracker.Models"
+             x:DataType="model:CartSetup">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="UpdateCartSetup" IconImageSource="settings.png"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+        <ContentPage.Content>
+        <ListView x:Name="CartSetupProperties">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:CartSetupPropertyData">
+                    <ViewCell>
+                        <StackLayout Padding="10" Orientation="Horizontal">
+                            <Label FontAttributes="Bold" Text="{Binding Key}"/>
+                            <Label Text=": "/>
+                            <Label Text="{Binding Value}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ContentPage.Content>
+</ContentPage>
