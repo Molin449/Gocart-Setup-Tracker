@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GocartSetupTracker.Views.UpdateCartSetupPage"
+             Title="Opdater">
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="DeleteItem" IconImageSource="delete.png"></ToolbarItem>
+        <ToolbarItem Clicked="SaveCartSetupUpdate" IconImageSource="save.png"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout  x:Name="inputsWrap"  Padding="20">
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

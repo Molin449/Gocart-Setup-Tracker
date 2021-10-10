@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "AVynt6K4AZtzp4+Z9r8WD4vw1UttzytPIs2bLJdbEVf8aFP868GaT68ekRE09JddYruaZX/QI1t2SL5NLhfsVg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Matti\\Documents\\Gocart-Setup-Tracker\\App\\GocartSetupTracker\\GocartSetupTracker.iOS\\GocartSetupTracker.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Matti\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

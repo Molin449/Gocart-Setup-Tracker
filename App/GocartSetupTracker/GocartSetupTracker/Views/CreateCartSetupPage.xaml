@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GocartSetupTracker.Views.CreateCartSetupPage"
+             Title="Opret ny bane setup"
+             xmlns:model="clr-namespace:GocartSetupTracker.Models"
+             xmlns:local="clr-namespace:GocartSetupTracker.Views">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Clicked="SaveCartSetup" IconImageSource="save.png"></ToolbarItem>
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout x:Name="inputsWrap" Padding="10, 5, 10, 5"/>
+        </ScrollView>
+        
+
+
+
+
+
+        <!--<ListView HasUnevenRows="True" x:Name="propertiesInputs">
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="model:CartSetupPropertyData">
+                    <ViewCell>
+                        <Grid x:Name="inputWrap" Padding="10, 5, 10, 5">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="1*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Label VerticalOptions="Center" Grid.Column="0" Text="{Binding Key}"/>
+                            <Entry Grid.Column="1" Placeholder=""/>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>-->
+    </ContentPage.Content>
+</ContentPage>
